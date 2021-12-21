@@ -1,0 +1,10 @@
+<!-- подключаем шаблон и указываем из каких частей состоит каждый блок -->
+
+{% extends 'layout.html' %}
+{% load static %}
+
+    {% block page %}
+        {% include "include/drop.html" %}
+
+        {% include "include/items.html" %}
+    {% endblock %} 

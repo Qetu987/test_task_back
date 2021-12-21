@@ -1,0 +1,17 @@
+<!-- описываем блоки с сабсервисами -->
+
+<div class="center">
+    <div>
+        {% for a in subservices %}
+            <hr>
+            <div class="item">
+                <p>{{ a.name }}</p>
+                <p>{{ a.price }}</p>
+                <p>{{ a.date }}</p>
+                
+            </div>
+            
+        {% endfor %}     
+    </div>
+       
+</div>

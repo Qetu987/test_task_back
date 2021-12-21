@@ -1,0 +1,26 @@
+<!-- описываем выпадашку -->
+
+<!-- 
+    выпадашка будет скидываться, для того чтоб не скидывалась, нужно подключать ajax 
+    и тогда не должна и преезагружаться страница 
+-->
+
+<div class="dropdown_main_field">
+    <div>
+        <p class="title">Select service</p>
+        <form action="/" method="get">
+
+            <select name="servise">
+                <option disabled>Выберите сервис</option>
+
+                {% for servis in servises %}
+
+                    <option value="{{servis.id}}">{{ servis.name }}</option>
+
+                {% endfor %}
+            </select>
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+</div>
+
